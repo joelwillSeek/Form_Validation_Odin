@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%htmlWebpackPlugin.options.title%></title>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <h1>FORM</h1>
+        <div class="left">
+          <input type="text" placeholder="Name" id="name" />
+          <input type="email" placeholder="Email" id="email" />
+          <select id="country">
+            <option value="none">Select Country</option>
+            <option value="uk">United Kingdom</option>
+            <option value="us">United States</option>
+            <option value="ca">Canada</option>
+          </select>
+        </div>
+        <div class="right">
+          <input
+            type="text"
+            placeholder="0000"
+            pattern="[0-9]*"
+            maxlength="4"
+            id="zipcode"
+          />
+          <input
+            type="password"
+            placeholder="password"
+            maxlength="30"
+            id="password"
+          />
+          <input
+            type="password"
+            placeholder="Conform Password"
+            maxlength="30"
+            id="confirm_password"
+          />
+        </div>
+        <button>Send</button>
+      </form>
+    </div>
+  </body>
+</html>
